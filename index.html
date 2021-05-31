@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="front">
+			<div class="upperleft">
+			  <p class="a">GIFT SUPERMARKET</p>
+			</div>
+			<div class="middle">
+			  <h1>OPENING SOON</h1>
+			  <p>3 MONTHS TO COME</p>
+			  <p id="demo" style="font-size:26px"></p>
+			</div>
+			<div class="bottomleft">
+		<P>COME ONE,COME ALL</P>
+		
+			</div>
+		  </div>
+		  </div>
+		  
+<script>
+			  var countDownDate = new Date("AUGUST, 2021 03:20:25").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+var distance = countDownDate - now;
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+ </script>
+ <h2>FOODS</h2>
+ <div class="foods"></div>
+ <div id="no-background"></div>
+ <div></div>
+ </body>
+</html>

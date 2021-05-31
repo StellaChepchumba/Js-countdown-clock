@@ -1,17 +1,61 @@
-body {
-    background: black;
+body, html {
+  height: 100%
 }
-
-.clock {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    color: #17D4FE;
-    font-size: 60px;
-    font-family: Orbitron;
-    letter-spacing: 7px;
-   
-
-
+.front {
+  background-image: url('images/supa.jpg');
+  height: 100%;
+ background-position: center;
+  background-size: cover;
+   position: relative;
+ color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+.upperleftleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+hr {
+  margin: auto;
+  width: 40%;
+}
+.a{
+  color:black;
+  font-weight: bold;
+}
+.b{
+  text-align: left;
+  padding-left: 80px;
+}
+.foods{
+  float: left;
+  width: 25%;
+}
+.availables:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.foods{
+  height: 170px;
+  width: 300px;
+  margin-bottom: 20px;
+  background-color: #CDCDCD;
+  border: 2px solid #CDCDCD;
+  background-image: url(images/cake.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
